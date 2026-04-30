@@ -92,13 +92,13 @@ set__password() {
 # BUTTON ACTIONS — Node.js tools
 #=================================================
 
-set__action_install_deps() {
+run__action_install_deps() {
     ynh_script_progression "Reinstalling dependencies..."
     _install_deps
     ynh_script_progression "Dependencies reinstalled."
 }
 
-set__action_restart() {
+run__action_restart() {
     ynh_script_progression "Restarting service..."
     ynh_systemctl --service="$app" --action="restart"
     ynh_script_progression "Service restarted."

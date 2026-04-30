@@ -104,7 +104,7 @@ run__action_restart() {
     ynh_script_progression "Service restarted."
 }
 
-set__action_build() {
+run__action_build() {
     ynh_script_progression "Running build script..."
     pushd "$install_dir/www"
         # Check if a build script exists in package.json
